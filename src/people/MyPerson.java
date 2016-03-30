@@ -59,7 +59,16 @@ public class MyPerson implements IPerson
     @Override
     public boolean wasBorn(GregorianCalendar date)
     {
-        return false;
+        try
+        {
+            this.getAge(date);
+            
+            return true;
+        }
+        catch(IllegalArgumentException ex)
+        {
+            return false;
+        }
     }
 
     /**
