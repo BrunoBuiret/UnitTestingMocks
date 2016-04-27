@@ -107,7 +107,7 @@ public class TestPersonUtils
             
         // Run assertion
         Assert.assertEquals(
-            "The lists should have been empty.",
+            "The list should have been empty.",
             emptyList,
             PersonUtils.filterByAge(this.persons, new GregorianCalendar(2016, 3, 20), 100, 101)
         );

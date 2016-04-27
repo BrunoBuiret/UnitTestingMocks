@@ -51,7 +51,7 @@ public abstract class PersonUtils
      * 
      * @param persons The list of persons to go through.
      * @param date The date to use as a point of reference.
-     * @return The greatest age, or -1 by default.
+     * @return The greatest age, or <code>-1</code> by default.
      */
     public static int getGreatestAge(List<IPerson> persons, GregorianCalendar date)
     {
